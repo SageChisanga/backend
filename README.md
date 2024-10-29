@@ -16,3 +16,10 @@ poetry shell
 before running the backend add the frontend url in the main.py file
 
 uvicorn main:app --reload
+
+# running the docker
+
+docker build -t "app_name" .
+
+docker run -p 8000:80 "app_name"
+
